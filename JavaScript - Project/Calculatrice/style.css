@@ -1,0 +1,44 @@
+.calculator{
+    width: 300px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+}
+
+.equal-container {
+    display: flex;
+    align-items: stretch; /* Étirer le bouton égal en hauteur */
+}
+
+.btn.equal {
+    flex-grow: 1; /* Permettre au bouton égal de grandir */
+    height: 380%; /* Définir la hauteur à 100% de son conteneur */
+}
+
+#display {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    flex-basis: 100%; 
+}
+
+button{
+    width: 50px;
+    background-color: #e0e0e0;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #c0c0c0;
+}
