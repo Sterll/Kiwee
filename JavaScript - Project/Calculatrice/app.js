@@ -31,6 +31,14 @@ document.getElementById("reset").addEventListener("click", function () {
     result.textContent = "0";
 });
 
+// Gestion du bouton des decimals
+
+document.getElementById("decimal").addEventListener("click", function () {
+    if(result.textContent == "0") return
+    if(result.textContent.slice(-1) == "+" || result.textContent.slice(-1) == "-" || result.textContent.slice(-1) == "*" || result.textContent.slice(-1) == "/") return
+    result.textContent += ".";
+});
+
 // Gestion du bouton de calcul
 
 document.getElementById("equal").addEventListener("click", function () {
