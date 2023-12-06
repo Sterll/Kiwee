@@ -19,6 +19,7 @@
 .btn.equal {
     flex-grow: 1; /* Permettre au bouton égal de grandir */
     height: 380%; /* Définir la hauteur à 100% de son conteneur */
+    background-color: rgb(79, 65, 236)
 }
 
 #display {
@@ -31,12 +32,15 @@
 
 button{
     width: 50px;
-    background-color: #e0e0e0;
-    border: 1px solid #000;
+    border: 1px solid #474646;
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    font-size: large;
+}
 
+.btn_concatenation{
+    background-color: #9b9898;
 }
 
 button:hover{
