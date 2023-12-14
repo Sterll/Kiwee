@@ -1,15 +1,16 @@
-//NEW VERSION
-for(let n = 1; n <= 6; n++) {
-    console.log(" ".repeat(6 - n) + "* ".repeat(n));
-}
+taille = 6;
 
 //OLD VERSION
-const taille = 6;
-let n = 1
-
-while(taille - n >= 0){
-    const space = " ".repeat(taille - n)
-    const star = "* ".repeat(n)
-    console.log(space + star)
-    n++;
+x = 1
+while(taille-x>=0){
+    console.log(" ".repeat(taille - x)+"* ".repeat(x))
+    x++;
 }
+
+//VERSION TWO
+for(n=1; n<=taille;n++){
+    console.log(" ".repeat(taille-n) + "* ".repeat(n))
+}
+
+//VERSION THREE
+Array.from({length: taille}, (_, n) => console.log(" ".repeat(taille - n) + "* ".repeat(n + 1)));
